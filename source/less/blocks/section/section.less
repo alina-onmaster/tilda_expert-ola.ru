@@ -1,0 +1,416 @@
+/* Цветной фон у блоков */
+#rec566761872,
+#rec584504225,
+#rec566973119,
+#rec566991997,
+#rec569721675, /*Работаем только с проверенными временем профилями*/
+.uc-partners /*Работаем только с проверенными временем профилями*/
+{
+  background-image:
+    url("https://static.tildacdn.com/tild3432-6434-4161-a131-323136363632/bg-color.png"), linear-gradient(90deg, #F4F5F9 0%, #E2E5EA 100%);
+  background-repeat: no-repeat, no-repeat;
+  background-position: right bottom, center;
+  background-size: contain, cover;
+}
+
+/* Цветной фон у модальных окон */
+.uc-modal-form {
+  & .t-popup__container {
+    background-image:
+      url("https://static.tildacdn.com/tild3432-6434-4161-a131-323136363632/bg-color.png"), linear-gradient(90deg, #F4F5F9 0%, #E2E5EA 100%);
+    background-repeat: no-repeat, no-repeat;
+    background-position: right bottom, center;
+    background-size: contain, cover;
+  }
+}
+
+/* Полупрозрачное изображение окна у логотипа */
+.uc-top-menu-desktop {
+  & .t821__logo-wrapper {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: -80px;
+      transform: translateY(-50%);
+      width: 139px;
+      height: 201px;
+      background-image: url("https://static.tildacdn.com/tild3938-6433-4436-b734-313966316530/logo-back.svg");
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+      z-index: 2;
+    }
+  }
+}
+
+/* Главное меню (бургер и виды услуг) */
+#rec569601334 {
+  & .t228__maincontainer {
+    position: relative;
+    z-index: 5;
+  }
+}
+/* Боковое меню desktop второй уровень */
+.uc-popup-menu {
+  & .t450__list_item {
+    &:nth-child(2),
+    &:nth-child(3),
+    &:nth-child(4),
+    &:nth-child(5){
+      & .t-menu__link-item {
+        margin-left: 20px;
+        font-size: 14px!important;
+      }
+    }
+
+    &:nth-child(2) {
+      margin-top: -5px;
+    }
+  }
+}
+
+.t-menusub__menu {
+  border: none;
+}
+
+/*Навигация в футере*/
+#rec567557794 {
+  & .t481__padding40px {
+    width: 0;
+  }
+}
+
+/* Блок "Рассрочка 0%" */
+#rec566761872 {
+  overflow: hidden;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    aspect-ratio: 42 /44;
+    width: 310px;
+    background-image: url("https://static.tildacdn.com/tild6663-3863-4538-b431-616235373632/girl-wow_1.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+
+    @media (min-width: 641px) {
+      width: 450px;
+    }
+
+    @media (min-width: 1201px) {
+      width: 560px;
+      transform: translateX(100px);
+    }
+  }
+
+  & .t938 .t-section__title {
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 400;
+    padding: 0.66em 2.33em;
+    background-color: #2F485D;
+    color: #ffffff;
+  }
+
+  & .t938__background-image {
+    display: none;
+  }
+
+  & .t938__title,
+  & .t938__features,
+  & .t938__button {
+    @media screen and (max-width: 960px) {
+      z-index: 2;
+    }
+  }
+  & .t-section__descr,
+  & .t938__features {
+    @media screen and (max-width: 960px) {
+      width: 70%;
+      margin-right: auto;
+    }
+  }
+}
+/* Блок "Акция месяца по потолкам" */
+#rec584504225 {
+  overflow: hidden;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    aspect-ratio: 42 /44;
+    width: 310px;
+    background-image: url("https://static.tildacdn.com/tild6432-6261-4638-a134-356538653133/thumbs-up-man.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+
+    @media (min-width: 641px) {
+      width: 450px;
+    }
+
+    @media (min-width: 1201px) {
+      width: 560px;
+      transform: translateX(100px);
+    }
+  }
+
+  & .t938 .t-section__title {
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 400;
+    padding: 0.66em 2.33em;
+    background-color: #2F485D;
+    color: #ffffff;
+  }
+
+  & .t938__background-image {
+    display: none;
+  }
+
+  & .t938__title,
+  & .t938__features,
+  & .t938__button {
+    @media screen and (max-width: 960px) {
+      z-index: 2;
+    }
+  }
+  & .t-section__descr,
+  & .t938__features {
+    @media screen and (max-width: 960px) {
+      width: 70%;
+      margin-right: auto;
+    }
+  }
+}
+
+/* Блок "Мы предлагаем"  и виды работ по натяжным потолкам*/
+#rec566864580,
+#rec584485814 {
+  & .t940__card {
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 105px;
+      background: rgba(255, 255, 255, 0.5);
+      backdrop-filter: blur(5px);
+      z-index: 1;
+    }
+  }
+}
+
+#rec566864580 {
+  & .t940__features-wrap {
+    &:nth-child(2) {
+      & .t940__item:first-child {
+        & .t940__card {
+          &:before {
+            display: none;
+          }
+        }
+
+        & .t-card__title {
+          text-align: right;
+        }
+      }
+    }
+  }
+}
+
+#rec584485814 {
+  & .t940__row:last-child {
+    & .t940__features-wrap {
+      &:last-child {
+        & .t940__item:first-child {
+          & .t940__card {
+            &:before {
+              display: none;
+            }
+          }
+
+          & .t-card__title {
+            text-align: right;
+          }
+        }
+      }
+    }
+  }
+
+}
+
+/* Фоновое изображение блока "Работаем в Марий Эл с 2010 года" */
+#rec566922937 {
+  background-image:
+    url("https://static.tildacdn.com/tild6664-3239-4432-b039-633638333164/map.png"),
+    linear-gradient(90deg, #F4F5F9 0%, #E2E5EA 100%);
+  background-repeat: no-repeat, no-repeat;
+  background-position: center, center;
+  background-size: 570px 425px, cover;
+}
+
+/* Изображение блока "О нас" */
+#rec566949527 {
+  & .t-section__container.t-container {
+    position: absolute;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    margin: -1px;
+    padding: 0;
+    width: 1px;
+    height: 1px;
+    border: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+  }
+
+  & .t589__img {
+    margin-top: -90px;
+  }
+}
+
+/*Изображение блока с формой "Оформите заявку на бесплатный замер!"*/
+#rec566991997 {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    aspect-ratio: 430 /582;
+    height: 100%;
+    background-image: url("https://static.tildacdn.com/tild3762-3037-4433-b162-386562663461/master.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    opacity: 0.3;
+
+    @media (min-width: 961px) {
+      opacity: 1;
+      height: calc(100% + 25px);
+    }
+  }
+
+  & .t700 {
+    position: relative;
+    z-index: 5;
+  }
+
+  & .t-section__title {
+    @media (min-width: 961px) {
+      max-width: 650px;
+    }
+
+    @media (min-width: 1201px) {
+      max-width: 810px;
+    }
+  }
+}
+
+/*Цена от в каталоге*/
+#rec569685270, /*Пластиковые окна*/
+#rec569755606, /*Пластиковые окна для балконов и лоджий*/
+#rec572899587, /*Межкомнатные*/
+.uc-catalog {
+  & .t-store__card__price-item {
+    vertical-align: baseline;
+  }
+  & .t-store__card__price-value {
+    &::before {
+      content: "от ";
+      font-size: 20px;
+    }
+  }
+
+  & .t-store__card__price-currency {
+    font-size: 20px;
+    vertical-align: baseline;
+  }
+}
+
+/*Фон плиток Рассрочка и бесплатный замер*/
+#rec580664747 {
+  & .t983__col {
+    &:nth-child(1) {
+      background: linear-gradient(106.77deg, rgba(255, 75, 18, 0.46) -11.8%, rgba(163, 153, 224, 0.38) 85.61%);
+
+      & .t983__card-line {
+        &::before {
+          background-image: url("https://static.tildacdn.com/tild3734-6633-4334-b039-633134376563/girl.png");
+        }
+
+      }
+    }
+
+    &:nth-child(2) {
+      background: linear-gradient(254.06deg, #F3F4F8 -21.2%, #DEF0FF 33.2%, #FFF9BE 105.05%);
+
+      & .t983__card-line {
+        &::before {
+          background-image: url("https://static.tildacdn.com/tild3633-6332-4461-b839-316637376662/pig.png");
+        }
+
+      }
+    }
+  }
+
+  & .t983__card {
+    overflow: visible;
+
+    @media (min-width: 1200px) {
+      overflow: hidden;
+    }
+  }
+
+  & .t983__card-line {
+    position: relative;
+    background-color: transparent;
+
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: -109px;
+      left: 50%;
+      width: 64%;
+      transform: translateX(0%);
+      aspect-ratio: 1 / 1;
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+      z-index: 5;
+
+      @media (min-width: 641px) {
+        bottom: -100px;
+      }
+
+      @media (min-width: 961px) {
+        width: 70%;
+        transform: translateX(-15%);
+      }
+
+      @media (min-width: 1200px) {
+        width: 60%;
+        bottom: -100px;
+      }
+    }
+  }
+}
+
+
+
+
+
+
